@@ -1,0 +1,134 @@
+.inter-300 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 13px;
+  font-style: normal;
+  color: #929292;
+}
+.inter-600 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+}
+.inter-200 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.noto-sans-400 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.noto-sans-500 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.A43_subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.A43_subtitle::before,
+.A43_subtitle::after {
+  content: "";
+  display: block;
+  width: 15px; /* Customize width */
+  height: 5px; /* Customize height */
+  background-color: #dec187; /* Customize color */
+  border-radius: 25%;
+}
+.A43_subtitle::before {
+  margin-right: 10px; /* Customize space between dash and text */
+}
+.A43_subtitle::after {
+  margin-left: 10px; /* Customize space between dash and text */
+}
+
+.image.background {
+  /*  todo add image here*/
+  background-image: none;
+}
+.IconBox_Conatainer{
+  position: relative;
+}
+
+.A43_IconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 340px;
+  height: 260px;
+  background-color: transparent;
+  border: #1E1E21 solid 2px;
+  /*background-color: #1E1E21;*/
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7%;
+  
+}
+.A43_IconBox:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%; /* Start from bottom */
+  background-color: #1E1E21;
+  z-index: 1;
+  animation: fillUp 500ms forwards;
+}
+/* * Definition of the fillup animation */
+@keyframes fillUp {
+  to {
+    top: 0;
+  }
+}
+.A43_S2_Icon{
+  background-color: aliceblue ;
+  height: 80px;
+  width: 80px;
+  padding: 27px;
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  right: 35%; 
+  z-index: 10;
+}
+.IconBox_description {
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Limit the text to 4 lines */
+  line-clamp: 4; /* Fallback for non-webkit browsers */
+  
+  
+}
+
+.IconBox_Content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+  z-index: 2;
+}
