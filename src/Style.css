@@ -1,7 +1,6 @@
 /* ! Image background */
-body{
+body {
   background-image: url("../Frank-image/Frame.png");
-
 }
 
 /* ! Font Classes Defintition*/
@@ -69,12 +68,24 @@ body{
   font-weight: 500;
   color: white;
 }
+.SecondSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
 
 /* * Subtitle */
 .A43_subtitle {
   position: relative;
   display: flex;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: white;
 }
 .A43_subtitle::before,
 .A43_subtitle::after {
@@ -417,6 +428,9 @@ body{
 /* * SixthSection Image */
 .SixthSectionImage {
   flex-basis: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 /* * end of SixthSection Image */
 /* * SixthSection Button */
@@ -557,6 +571,7 @@ body{
 }
 
 .SeventhSectionButtonContainer {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,13 +604,13 @@ body{
   margin-top: 100px;
   margin-bottom: 100px;
   padding-top: 60px;
+  padding-bottom: 60px;
   /* Glass effect */
   background: rgba(0, 0, 0, 0); /* White background with opacity */
   backdrop-filter: blur(10px); /* Blurs the background for a glass effect */
   border-radius: 15px; /* Optional: rounded corners */
-  
-  /* Optional: Glowing effect */
 
+  /* Optional: Glowing effect */
 }
 
 .EighthSectionBanner {
@@ -628,7 +643,6 @@ body{
   justify-content: space-between;
   gap: 0;
   height: 402px;
-  
 }
 .EighthSectionCard {
   display: flex;
@@ -660,11 +674,151 @@ body{
   font-weight: 100;
   color: white;
 }
-.Arrow-Icon {
-  font-size: 75px; /* Adjust the size as needed */
+
+.NinthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
+.NinthSectionCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.TestimonialCard {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid gray;
+  border-radius: 6%;
+}
+.TestimonialHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+.TestimonialRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+}
+.TestimonialText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: white;
+  text-align: justify;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9; /* Limit the text to 4 lines */
+  line-clamp: 9; /* Fallback for non-webkit browsers */
+}
+.TestimonialFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+.TestimonialImage {
+  border-radius: 100%;
+}
+.TestimonialName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+}
 .Arrow-Button {
   display: flex;
-  overflow: hidden;
+  font-size: 45px;
+  transition: transform 0.5s ease;
+}
+.Arrow-Button:hover {
+  transform: translateX(25px); /* Adjust the value as needed */
+}
+.TenthSection {
+  margin-top: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.TenthSectionTitle {
+  text-align: center;
+  padding-left: 340px;
+  padding-right: 340px;
+}
+.TenthSectionInput {
+  width: 500px;
+  height: 50px;
+
+  border: 1px solid gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+}
+.TenthSectionInput::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.251);
+  padding: 10px;
+}
+.TenthSectionButton {
+  border-left: 1px solid gray;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+.Footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

@@ -16,6 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap"
       rel="stylesheet"
     />
@@ -30,10 +35,57 @@
     />
     <!-- * Css File-->
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="./Oualid.css" />
   </head>
-  <body class=" text-white">
+  <body class="text-white">
+    <!-- * 1st Section "Frank Vito"-->
+    <nav class="nav">
+      <a href="#" class="logo">
+        <img src="../Frank-image/logo.png" alt="" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#">COMMERCIAL</a></li>
+        <li><a href="#">INVESTISSEMENT PASSIF</a></li>
+        <li><a href="#">RETOURNEMENT DE PROPRIÉTÉ</a></li>
+        <li><a href="#">MAISONS DE LUX</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="o-frank-one">
+        <div class="container o-first-frank">
+          <img src="../Frank-image/Frank.png" alt="" />
+          <div class="advisor absolute flex">
+            <div class="advisor-2">
+              <div class="o-frankvito">
+                <span class="logo-text"
+                  >FRANK<span class="o-bold">VITO</span></span
+                >
+              </div>
+              <div class="o-content">
+                <p class="o-uhnwi">UHNWI</p>
+                <p class="o-investment-advisor">
+                  INVESTMENT <br /><span>ADVIDOR</span>
+                </p>
+                <p class="o-descript">
+                  Providing Tailored Solution for Every Client, All <br />Under
+                  One Roof.
+                </p>
+              </div>
+              <button>CONTACT US</button>
+            </div>
+            <div class="advisor-logo">
+              <img src="../Frank-image/Logo.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- * 2nd Section "Exclusive Investment Opportunities"-->
-    <div class="flex justify-center flex-col items-center">
+    <div class="SecondSection">
       <!--! Subtitle -->
       <p class="A43_subtitle">
         <span class="inter-600">Frank</span>
@@ -114,7 +166,7 @@
       <!-- ! Content Section-->
       <div class="ThirdSectionContent">
         <!-- ! Subtitle -->
-        <p class="ThirdSectionSubtitle">
+        <p class="ThirdSectionSubtitle" style="margin-left: 22px">
           <span class="dash"></span>
           <span class="inter-600">Frank</span>
           <span class="inter-200">Vito</span>
@@ -206,7 +258,8 @@
         <button class="SixthSectionButton">BOOK NOW</button>
       </div>
       <div class="SixthSectionImage">
-        <img src="../Frank-image/Frank_smile.png" alt="" />
+        <img src="../Frank-image/Frank_smile.png" alt="" class="TsFrontImage" />
+        <img src="../Frank-image/Elipse Line.png" alt="" class="TsBackImage" />
       </div>
       <!-- ! Image Overlay -->
     </div>
@@ -265,7 +318,7 @@
         <div class="EighthSectionImage">
           <img src="../Frank-image/Children.png" alt="" />
         </div>
-        <div class="EighthSectionCard ">
+        <div class="EighthSectionCard">
           <h2 class="SectionEighthCardTitle">
             Top 10 Villa Contracting Companies in Dubai
           </h2>
@@ -275,15 +328,16 @@
             Somewhere…
           </h2>
           <h2 class="SectionEighthCardDate">May 31, 2024</h2>
-          <button class="Arrow-Button"><span class="Arrow-Icon">&#10170;</span></button>
-
+          <button class="Arrow-Button">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
       <div class="EighthSectionContent flex-row-reverse">
         <div class="EighthSectionImage">
           <img src="../Frank-image/Children.png" alt="" />
         </div>
-        <div class="EighthSectionCard ">
+        <div class="EighthSectionCard">
           <h2 class="SectionEighthCardTitle">
             Top 10 Villa Contracting Companies in Dubai
           </h2>
@@ -293,15 +347,16 @@
             Somewhere…
           </h2>
           <h2 class="SectionEighthCardDate">May 31, 2024</h2>
-          <button class="Arrow-Button"><span class="Arrow-Icon">&#10170;</span></button>
-
+          <button class="Arrow-Button">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
       <div class="EighthSectionContent">
         <div class="EighthSectionImage">
           <img src="../Frank-image/Children.png" alt="" />
         </div>
-        <div class="EighthSectionCard ">
+        <div class="EighthSectionCard">
           <h2 class="SectionEighthCardTitle">
             Top 10 Villa Contracting Companies in Dubai
           </h2>
@@ -311,15 +366,16 @@
             Somewhere…
           </h2>
           <h2 class="SectionEighthCardDate">May 31, 2024</h2>
-          <button class="Arrow-Button text-white"><span class="Arrow-Icon">&#10170;</span></button>
-
+          <button class="Arrow-Button text-white">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
       <div class="EighthSectionContent flex-row-reverse">
         <div class="EighthSectionImage">
           <img src="../Frank-image/Children.png" alt="" />
         </div>
-        <div class="EighthSectionCard ">
+        <div class="EighthSectionCard">
           <h2 class="SectionEighthCardTitle">
             Top 10 Villa Contracting Companies in Dubai
           </h2>
@@ -329,11 +385,135 @@
             Somewhere…
           </h2>
           <h2 class="SectionEighthCardDate">May 31, 2024</h2>
-          <button class="Arrow-Button"><span class="Arrow-Icon">&#10170;</span></button>
+          <button class="Arrow-Button">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="SeventhSectionButtonContainer">
+        <button class="SeventhSectionButton">FIND MORE ARTICLES</button>
+      </div>
+    </div>
+    <!-- * 9th Section "Testimonial" -->
+    <div class="NinthSection">
+      <!-- ! Subtitle-->
+      <div>
+        <p class="A43_subtitle">
+          <span class="">testimonials </span>
+        </p>
+      </div>
+      <!-- ! Title-->
+      <h2 class="Title">What Our Clients Say</h2>
+      <!-- ! Description-->
+      <p class="FourthSectionSubtitle">
+        Our articles, guides, and videos help you through the process, start to
+        finish.
+      </p>
+      <!-- ! Card Container-->
 
+      <div class="NinthSectionCardContainer">
+        <div class="TestimonialCard">
+          <div class="TestimonialHeader">
+            <!-- ! Quote-->
+            <i class="fa-solid fa-quote-left" style="font-size: 50px"></i>
+            <!-- ! Rating -->
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <i class="fa-solid fa-star" style="color: #dec187"></i>
+              <h4 class="TestimonialRating">4.7/5</h4>
+            </div>
+          </div>
+          <div class="TestimonialBody">
+            <!-- ! Text-->
+            <p class="TestimonialText">
+              "Working with Frank Vito has been an exceptional experience. His
+              in-depth knowledge, meticulous attention to detail, and
+              personalized approach have significantly impacted my financial
+              success. Frank's strategic insights and unwavering support have
+              been invaluable. I highly recommend his services to anyone seeking
+              expert financial advice. Thank you, Frank, for your commitment and
+              outstanding expertise!"
+            </p>
+          </div>
+          <div class="TestimonialFooter">
+            <!-- ! Name-->
+            <h4 class="TestimonialName">Jane Doe</h4>
+            <!-- ! image-->
+            <img
+              src="../Frank-image/Anna.png"
+              alt=""
+              class="TestimonialImage"
+            />
+          </div>
+        </div>
+        <div class="TestimonialCard">
+          <div class="TestimonialHeader">
+            <!-- ! Quote-->
+            <i class="fa-solid fa-quote-left" style="font-size: 50px"></i>
+            <!-- ! Rating -->
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <i class="fa-solid fa-star" style="color: #dec187"></i>
+              <h4 class="TestimonialRating">4.7/5</h4>
+            </div>
+          </div>
+          <div class="TestimonialBody">
+            <!-- ! Text-->
+            <p class="TestimonialText">
+              "Frank has been an invaluable asset in navigating the complexities
+              of real estate investments. His unmatched expertise in financial
+              guidance for real estate has helped me make informed and strategic
+              decisions. Frank's personalized approach and deep understanding of
+              the market have greatly contributed to the success of my
+              investment. If you are looking for exceptional financial advice in
+              the real estate sector ..."
+            </p>
+          </div>
+          <div class="TestimonialFooter">
+            <!-- ! Name-->
+            <h4 class="TestimonialName">Frank</h4>
+            <!-- ! image-->
+            <img
+              src="../Frank-image/Daniel.png"
+              alt=""
+              class="TestimonialImage"
+            />
+          </div>
         </div>
       </div>
     </div>
+    <!-- * 10th Section "NewsLetter" -->
+    <div class="TenthSection">
+      <div>
+        <p class="A43_subtitle">
+          <span class="">testimonials </span>
+        </p>
+      </div>
+      <div class="TenthSectionTitle">
+        <h2 class="Title">
+          Be The First to Know About New Project Launches in Dubai
+        </h2>
+      </div>
+      <div style="position: relative;">
+        <input type="text" name="" id="" class="TenthSectionInput" placeholder="type your mail to receive the newsleter">
+        <button class="TenthSectionButton">SUBMIT</button>
+      </div>
+    </div>
+    <!-- * 11th Section "Footer" -->
+     <div class="Footer">
+        <img src="../Frank-image/Logo_last.png" alt="">
+        <h2>Contact</h2>
+     </div>
   </body>
 
   <!-- * Bootstrap Script-->
