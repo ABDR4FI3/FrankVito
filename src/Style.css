@@ -1,3 +1,9 @@
+/* ! Image background */
+body{
+  background-image: url("../Frank-image/Frame.png");
+
+}
+
 /* ! Font Classes Defintition*/
 .inter-300 {
   font-family: "Inter", sans-serif;
@@ -56,6 +62,14 @@
 }
 
 /* ! Second Section */
+.Title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: white;
+}
+
 /* * Subtitle */
 .A43_subtitle {
   position: relative;
@@ -97,7 +111,7 @@
   width: 340px;
   height: 260px;
   background-color: transparent;
-  border: #1e1e21 solid 2px;
+  border: #b3b3b37d solid 2px;
   /*background-color: #1E1E21;*/
   padding: 30px;
   overflow: hidden;
@@ -160,6 +174,12 @@
 .ThirdSection {
   margin-top: 90px;
   margin-bottom: 90px;
+  margin-right: 100px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 .ThirdSectionContent {
   flex-basis: 40%;
@@ -179,12 +199,14 @@
   position: absolute;
   top: 0;
   z-index: 0;
+  scale: 0.8;
 }
 .TsFrontImage {
   position: relative;
   border-radius: 6%;
   top: 0;
   z-index: 3;
+  scale: 0.8;
 }
 /* * end of Image Overlay */
 /* * Subtitle */
@@ -263,19 +285,386 @@
 /* * end of Subtitle */
 /* * Button */
 .FourthSectionButton {
-  border: 1px solid transparent; /* Set a transparent border to allow the gradient to show */
-  border-image: linear-gradient(to right, white, black); /* Gradient from white to black */
-  border-image-slice: 1; /* Stretch the gradient across the border */
-  border-radius: 12px;
-  padding: 15px; 
-  background-color: transparent; /* Ensure the background is transparent */
-  color: white; 
-  font-size: 16px; 
-  cursor: pointer; 
-  border-radius: 10px;
-  transition: scale 0.8s, color 0.3s; 
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  width: 180px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.8s, color 0.3s;
+  border-radius: 20px;
+  z-index: 2;
+  overflow: hidden;
+  background: transparent;
+}
+.FourthSectionButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(to right, white, black);
+  background: linear-gradient(to right, white, black);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
 }
 
 .FourthSectionButton:hover {
   scale: 1.1;
+}
+/* * end of Button */
+/* ! Fourth Section End */
+/* todo ______________________________________________________________   */
+/* * FifthSection Start */
+
+.FifthSection {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* * Image */
+.FifthSectionImage {
+  flex-basis: 65%;
+}
+/* * end of Image */
+/* * Content */
+.FifthSectionContent {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100% !;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.FifthSectionSpan {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+}
+.FifthSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.FifthSectionDescription {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 13.5px;
+  font-weight: 200;
+  line-height: 22px;
+}
+
+/* * end of Content */
+/* ! FifthSection End */
+/* todo ______________________________________________________________   */
+/* ! SixthSection Start */
+
+.SixthSection {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* * SixthSection Content */
+.SixthSectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  flex-basis: 30%;
+}
+
+/* ! Title */
+.SixthSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+}
+/* ! Subtitle */
+.SixthSectionSubtitle {
+  margin-left: 20px;
+}
+/* ! end of Subtitle */
+/* ! Description */
+.SixthSectionDescription {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 22px;
+}
+/* ! end of Description */
+/* * SixthSection Image */
+.SixthSectionImage {
+  flex-basis: 50%;
+}
+/* * end of SixthSection Image */
+/* * SixthSection Button */
+.SixthSectionButton {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  width: 160px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.8s, color 0.3s;
+  border-radius: 20px;
+  z-index: 2;
+  overflow: hidden;
+  background: transparent;
+}
+.SixthSectionButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(to right, white, black);
+  background: linear-gradient(to right, white, black);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.SixthSectionButton:hover {
+  scale: 1.1;
+}
+
+/* * end of SixthSection Button */
+/* ! SixthSection End */
+/* todo ______________________________________________________________   */
+/* ! SeventhSection Start */
+.SeventhSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.SeventhSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  background: linear-gradient(to right, white, #787787); /* Gradient color */
+  -webkit-background-clip: text; /* Vendor-prefixed for WebKit browsers */
+  background-clip: text; /* Standard property for future compatibility */
+  -webkit-text-fill-color: transparent; /* Vendor-prefixed for WebKit browsers */
+  color: transparent; /* Fallback for standard property */
+}
+.SeventhSectionSubtitle {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+/* ! Cards */
+.SeventhSectionCard {
+  display: flex;
+  flex-basis: 35%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.077); /* Subtle border for glass effect */
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for the glass look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Optional: slight shadow for depth */
+  color: white; /* Text color */
+}
+
+.SeventhSectionCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.SeventhSectionButton {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  width: 200px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.8s, color 0.3s;
+  border-radius: 20px;
+  z-index: 2;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.SeventhSectionButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to right, white, transparent);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.SeventhSectionButton:hover {
+  transform: scale(1.1);
+}
+
+.SeventhSectionButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ! Title */
+.SeventhSectionCardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+}
+.SeventhSectionCardDescription {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.EighthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  /* Glass effect */
+  background: rgba(0, 0, 0, 0); /* White background with opacity */
+  backdrop-filter: blur(10px); /* Blurs the background for a glass effect */
+  border-radius: 15px; /* Optional: rounded corners */
+  
+  /* Optional: Glowing effect */
+
+}
+
+.EighthSectionBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.EighthSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  background: linear-gradient(to right, white, #787787); /* Gradient color */
+  -webkit-background-clip: text; /* Vendor-prefixed for WebKit browsers */
+  background-clip: text; /* Standard property for future compatibility */
+  -webkit-text-fill-color: transparent; /* Vendor-prefixed for WebKit browsers */
+  color: transparent; /* Fallback for standard property */
+}
+.EighthSectionSubtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.EighthSectionContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  height: 402px;
+  
+}
+.EighthSectionCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 50%;
+  justify-content: center;
+  padding: 174px;
+}
+.EighthSectionImage {
+  flex-basis: 50%;
+}
+.SectionEighthCardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+}
+.SectionEighthCardDescription {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+.SectionEighthCardDate {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+}
+.Arrow-Icon {
+  font-size: 75px; /* Adjust the size as needed */
+}
+
+.Arrow-Button {
+  display: flex;
+  overflow: hidden;
 }
