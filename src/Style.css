@@ -1,3 +1,4 @@
+/* ! Font Classes Defintition*/
 .inter-300 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -21,11 +22,27 @@
   font-style: normal;
 }
 
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 55px;
+  font-style: normal;
+}
+
 .noto-sans-400 {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-size: 48px;
   font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.noto-sans-light-400 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: 100;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -38,6 +55,8 @@
   font-variation-settings: "wdth" 100;
 }
 
+/* ! Second Section */
+/* * Subtitle */
 .A43_subtitle {
   position: relative;
   display: flex;
@@ -58,12 +77,15 @@
 .A43_subtitle::after {
   margin-left: 10px; /* Customize space between dash and text */
 }
+/* * end of Subtitle */
+/* todo ______________________________________________________________   */
+/* * IconBox */
 
 .image.background {
   /*  todo add image here*/
   background-image: none;
 }
-.IconBox_Conatainer{
+.IconBox_Conatainer {
   position: relative;
 }
 
@@ -75,13 +97,12 @@
   width: 340px;
   height: 260px;
   background-color: transparent;
-  border: #1E1E21 solid 2px;
+  border: #1e1e21 solid 2px;
   /*background-color: #1E1E21;*/
   padding: 30px;
   overflow: hidden;
   position: relative;
   border-radius: 7%;
-  
 }
 .A43_IconBox:hover::before {
   content: "";
@@ -90,7 +111,7 @@
   left: 0;
   right: 0;
   top: 100%; /* Start from bottom */
-  background-color: #1E1E21;
+  background-color: #1e1e21;
   z-index: 1;
   animation: fillUp 500ms forwards;
 }
@@ -100,15 +121,15 @@
     top: 0;
   }
 }
-.A43_S2_Icon{
-  background-color: aliceblue ;
+.A43_S2_Icon {
+  background-color: aliceblue;
   height: 80px;
   width: 80px;
   padding: 27px;
   border-radius: 100%;
   position: absolute;
   top: -30px;
-  right: 35%; 
+  right: 35%;
   z-index: 10;
 }
 .IconBox_description {
@@ -119,11 +140,9 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4; /* Limit the text to 4 lines */
   line-clamp: 4; /* Fallback for non-webkit browsers */
-  
-  
 }
 
-.IconBox_Content{
+.IconBox_Content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -131,4 +150,132 @@
   gap: 10px;
   margin-top: 60px;
   z-index: 2;
+}
+
+/* * end of IconBox */
+
+/* todo ______________________________________________________________   */
+/* ! third Section Start */
+/* * Image Overlay */
+.ThirdSection {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.ThirdSectionContent {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.TsImageOverlay {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.TsBackImage {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.TsFrontImage {
+  position: relative;
+  border-radius: 6%;
+  top: 0;
+  z-index: 3;
+}
+/* * end of Image Overlay */
+/* * Subtitle */
+.ThirdSectionSubtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ThirdSectionSubtitle::before {
+  content: "";
+  position: absolute;
+  left: -15px; /* Adjust as needed to position the dash */
+  width: 15px; /* Customize width */
+  height: 5px; /* Customize height */
+  background-color: #dec187; /* Customize color */
+  border-radius: 25%;
+}
+
+.ThirdSectionSubtitle .dash {
+  margin-right: 10px; /* Space between the dash and text */
+}
+
+.ThirdSectionSubtitle span {
+  margin: 0; /* Remove space between text elements */
+}
+/* * end of Subtitle */
+/* todo ______________________________________________________________   */
+/* * Text */
+.ThirdSectionText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ThirdSection_description {
+  padding-right: 4rem;
+  text-align: justify;
+  width: 85%;
+}
+/* * end of Text */
+/* ! third Section End */
+
+/* ! Fourth Section Start */
+.FourthSection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+/* * Title */
+.FourthSectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 70px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  font-style: normal;
+}
+/* * Subtitle */
+.FourthSectionSubtitle {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  font-style: normal;
+  width: 61%;
+}
+.FourthSectionSubtitle > span {
+  font-weight: 600;
+}
+/* * end of Subtitle */
+/* * Button */
+.FourthSectionButton {
+  border: 1px solid transparent; /* Set a transparent border to allow the gradient to show */
+  border-image: linear-gradient(to right, white, black); /* Gradient from white to black */
+  border-image-slice: 1; /* Stretch the gradient across the border */
+  border-radius: 12px;
+  padding: 15px; 
+  background-color: transparent; /* Ensure the background is transparent */
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 10px;
+  transition: scale 0.8s, color 0.3s; 
+}
+
+.FourthSectionButton:hover {
+  scale: 1.1;
 }
