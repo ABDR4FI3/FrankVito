@@ -847,6 +847,12 @@ body {
   flex-direction: column;
   gap: 20px;
   padding-top: 30px;
-
   text-align: center;
+}
+.VedioContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
