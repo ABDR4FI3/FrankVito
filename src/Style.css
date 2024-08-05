@@ -790,7 +790,7 @@ body {
   padding-right: 10px;
   background-color: transparent;
 }
-.TenthSectionInput::placeholder{
+.TenthSectionInput::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -813,12 +813,40 @@ body {
   right: 0;
   padding: 10px;
 }
-.Footer{
+.Footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  text-align: center;
+}
+
+.FooterList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  color: white;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  width: 55%;
+  padding-bottom: 40px;
+}
+.Footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+
+  text-align: center;
 }
