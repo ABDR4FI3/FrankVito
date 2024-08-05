@@ -1040,7 +1040,7 @@ body {
   padding: 10px;
 }
 .TenthSectionButton {
-  border-left: 1px solid gray;
+  border: 1px solid gray;
   height: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -1049,8 +1049,6 @@ body {
   line-height: 30px;
   color: white;
   background-color: transparent;
-  position: absolute;
-  right: 0;
   padding: 10px;
 }
 .Footer {
@@ -1114,4 +1112,14 @@ body {
     width: 55%;
     padding-bottom: 40px;
   }
+  .TenthSectionTitle {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .TenthSectionInputContainer{
+    width: 80%;
+  }
+}
+.TenthSectionInputContainer {
+  display: flex;
 }
