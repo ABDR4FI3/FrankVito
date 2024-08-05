@@ -245,7 +245,6 @@ body {
   margin: 0; /* Remove space between text elements */
 }
 /* * end of Subtitle */
-/* todo ______________________________________________________________   */
 /* * Text */
 .ThirdSectionText {
   display: flex;
@@ -258,6 +257,56 @@ body {
   width: 85%;
 }
 /* * end of Text */
+@media (max-width: 991px) {
+  .ThirdSection {
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .ThirdSectionContent {
+    flex-basis: 100%;
+    align-items: center; /* Center align content */
+  }
+
+  .TsImageOverlay {
+    flex-basis: 100%;
+    max-width: 100%; /* Ensure image doesn't overflow */
+  }
+
+  .TsBackImage {
+    scale: 1;
+    top: 13%;
+  }
+  .TsFrontImage {
+    scale: 0.8;
+  }
+
+  .ThirdSection_description {
+    padding-right: 1rem; /* Adjust padding for smaller screens */
+    width: 100%; /* Full width */
+  }
+}
+
+@media (max-width: 576px) {
+  .ThirdSection {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .ThirdSectionSubtitle {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .ThirdSectionText h1 {
+    font-size: 24px; /* Adjust font size for heading */
+  }
+
+  .ThirdSection_description {
+    font-size: 14px; /* Adjust font size for description */
+  }
+}
 /* ! third Section End */
 
 /* ! Fourth Section Start */
@@ -331,11 +380,44 @@ body {
 .FourthSectionButton:hover {
   scale: 1.1;
 }
+@media (max-width: 768px) {
+  .FourthSectionTitle {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+
+  .FourthSectionSubtitle {
+    font-size: 14px; /* Adjust font size for subtitle */
+    width: 80%; /* Increase width to use more screen space */
+  }
+
+  .FourthSectionButton {
+    width: 150px; /* Adjust button width */
+    font-size: 14px; /* Adjust font size for the button */
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .FourthSectionTitle {
+    font-size: 40px; /* Further adjust font size for very small screens */
+  }
+
+  .FourthSectionSubtitle {
+    font-size: 12px; /* Further adjust font size for subtitle */
+    width: 90%; /* Increase width to use more screen space */
+  }
+
+  .FourthSectionButton {
+    width: 120px; /* Adjust button width */
+    font-size: 12px; /* Adjust font size for the button */
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+}
 /* * end of Button */
 /* ! Fourth Section End */
 /* todo ______________________________________________________________   */
 /* * FifthSection Start */
-
+/* Default Styles */
 .FifthSection {
   display: flex;
   justify-content: space-between;
@@ -344,20 +426,43 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* * Image */
+
 .FifthSectionImage {
   flex-basis: 65%;
 }
-/* * end of Image */
-/* * Content */
+
 .FifthSectionContent {
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
-  height: 100% !;
+  height: 100%;
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 790px) {
+  .FifthSection {
+    flex-direction: column; /* Stack image and content vertically */
+    margin: 0 !important;
+  }
+
+  .FifthSectionImage {
+    flex-basis: auto; /* Adjust flex-basis for small screens */
+    margin-bottom: 20px; /* Add space between image and content */
+  }
+
+  .FifthSectionContent {
+    flex-basis: auto; /* Adjust flex-basis for small screens */
+  }
+}
+
+@media (min-width: 790px) {
+  .FifthSection {
+    margin-right: 90px !important;
+    margin-left: 90px !important;
+  }
 }
 
 .FifthSectionSpan {
@@ -380,6 +485,7 @@ body {
   font-size: 13.5px;
   font-weight: 200;
   line-height: 22px;
+  text-align: justify;
 }
 
 /* * end of Content */
@@ -392,6 +498,7 @@ body {
   justify-content: center;
   margin-right: 20px;
   margin-left: 20px;
+  gap: 20px;
 }
 /* * SixthSection Content */
 .SixthSectionContent {
@@ -470,6 +577,53 @@ body {
 .SixthSectionButton:hover {
   scale: 1.1;
 }
+@media (max-width: 768px) {
+  .SixthSection {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+  }
+
+  .SixthSectionContent {
+    flex-basis: 100%; /* Full width on smaller screens */
+    align-items: center; /* Center-align text */
+    text-align: center; /* Center-align text */
+  }
+
+  .SixthSectionImage {
+    flex-basis: 100%; /* Full width on smaller screens */
+    margin-top: 20px; /* Add space between text and image */
+  }
+
+  .SixthSectionTitle {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .SixthSectionDescription {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .SixthSectionButton {
+    width: 140px; /* Adjust button width */
+    font-size: 14px; /* Adjust font size for the button */
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .SixthSectionTitle {
+    font-size: 24px; /* Further adjust font size for very small screens */
+  }
+
+  .SixthSectionDescription {
+    font-size: 12px; /* Further adjust font size for subtitle */
+  }
+
+  .SixthSectionButton {
+    width: 120px; /* Further adjust button width */
+    font-size: 12px; /* Further adjust font size for the button */
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+}
 
 /* * end of SixthSection Button */
 /* ! SixthSection End */
@@ -529,6 +683,29 @@ body {
   justify-content: center;
 
   gap: 20px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .SeventhSection {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .SeventhSectionTitle {
+    font-size: 30px;
+    text-align: center;
+  }
+  .SeventhSectionSubtitle {
+    text-align: center;
+  }
+  .SeventhSectionCards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .SeventhSectionCard {
+    flex-basis: 100%; /* Full width for each card on smaller screens */
+    max-width: 400px; /* Optional: limit max width of cards */
+  }
 }
 
 .SeventhSectionButton {
@@ -594,7 +771,6 @@ body {
   letter-spacing: 1px;
   color: white;
 }
-
 .EighthSection {
   display: flex;
   flex-direction: column;
@@ -605,12 +781,9 @@ body {
   margin-bottom: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
-  /* Glass effect */
   background: rgba(0, 0, 0, 0); /* White background with opacity */
   backdrop-filter: blur(10px); /* Blurs the background for a glass effect */
   border-radius: 15px; /* Optional: rounded corners */
-
-  /* Optional: Glowing effect */
 }
 
 .EighthSectionBanner {
@@ -620,6 +793,7 @@ body {
   align-items: center;
   gap: 20px;
 }
+
 .EighthSectionTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
@@ -631,6 +805,7 @@ body {
   -webkit-text-fill-color: transparent; /* Vendor-prefixed for WebKit browsers */
   color: transparent; /* Fallback for standard property */
 }
+
 .EighthSectionSubtitle {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -638,23 +813,28 @@ body {
   line-height: 22px;
   letter-spacing: 1px;
 }
+
 .EighthSectionContent {
   display: flex;
   justify-content: space-between;
   gap: 0;
   height: 402px;
+  width: 100%;
 }
+
 .EighthSectionCard {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex-basis: 50%;
   justify-content: center;
-  padding: 174px;
+  padding: 20px; /* Adjust padding for responsiveness */
 }
+
 .EighthSectionImage {
   flex-basis: 50%;
 }
+
 .SectionEighthCardTitle {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -663,18 +843,44 @@ body {
   line-height: 30px;
   color: white;
 }
+
 .SectionEighthCardDescription {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 200;
 }
+
 .SectionEighthCardDate {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 100;
   color: white;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .EighthSectionBanner {
+    text-align: center;
+  }
+  .EighthSectionTitle {
+    font-size: 40px;
+  }
+  .EighthSectionContent {
+    flex-direction: column !important; /* Stack image and text vertically */
+    height: auto; /* Allow content to expand naturally */
+  }
 
+  .EighthSectionImage,
+  .EighthSectionCard {
+    flex-basis: 100%; /* Full width for both image and card */
+  }
+
+  .EighthSectionImage img {
+    width: 100%; /* Ensure image scales with its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* TODO ---------------------------------------------*/
 .NinthSection {
   display: flex;
   flex-direction: column;
@@ -758,6 +964,40 @@ body {
   line-height: 30px;
   color: white;
 }
+@media (max-width: 768px) {
+  .NinthSectionCardContainer {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+  }
+
+  .TestimonialCard {
+    flex-basis: 100%; /* Full width for each card */
+    margin-bottom: 20px; /* Space between stacked cards */
+  }
+  .TestimonialText {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: justify;
+    padding: 30px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+  }
+  .Title {
+    font-size: 30px;
+  }
+}
+/* ! End of Ninth Section */
 .Arrow-Button {
   display: flex;
   font-size: 45px;
@@ -800,7 +1040,7 @@ body {
   padding: 10px;
 }
 .TenthSectionButton {
-  border-left: 1px solid gray;
+  border: 1px solid gray;
   height: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -809,8 +1049,6 @@ body {
   line-height: 30px;
   color: white;
   background-color: transparent;
-  position: absolute;
-  right: 0;
   padding: 10px;
 }
 .Footer {
@@ -855,4 +1093,33 @@ body {
   align-items: center;
   margin-top: 40px;
   margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .FooterList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px !important;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    color: white;
+    flex-direction: column !important;
+    border-bottom: 1px solid gray;
+    width: 55%;
+    padding-bottom: 40px;
+  }
+  .TenthSectionTitle {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .TenthSectionInputContainer{
+    width: 80%;
+  }
+}
+.TenthSectionInputContainer {
+  display: flex;
 }
