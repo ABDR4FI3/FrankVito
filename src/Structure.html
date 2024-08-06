@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- * Montserrat Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +32,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Body 1 Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Body+1:300,400,700"
+      rel="stylesheet"
+    />
+
     <!-- * Inter Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -45,51 +56,93 @@
   </head>
   <body class="text-white">
     <!-- * 1st Section "Frank Vito"-->
-    <nav class="nav">
-      <a href="#" class="logo">
-        <img src="../Frank-image/logo.png" alt="" />
-      </a>
+    <div class="container nav-con">
+      <nav class="nav navbar navbar-expand-lg navbar-light">
+        <a href="#" class="navbar-brand">
+          <img src="../Frank-image/logo.png" alt="" class="logo" />
+        </a>
 
-      <ul class="nav-links">
-        <li><a href="#">COMMERCIAL</a></li>
-        <li><a href="#">INVESTISSEMENT PASSIF</a></li>
-        <li><a href="#">RETOURNEMENT DE PROPRIÉTÉ</a></li>
-        <li><a href="#">MAISONS DE LUX</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section>
-      <div class="o-frank-one">
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="nav-links navbar-nav ml-10">
+            <li class="nav-item">
+              <a href="#" class="nav-link">COMMERCIAL</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">INVESTISSEMENT PASSIF</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">RETOURNEMENT DE PROPRIÉTÉ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">MAISONS DE LUX</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="block">
+      <div class="o-frank-one block">
         <div class="container o-first-frank">
           <img src="../Frank-image/Frank.png" alt="" />
-          <div class="advisor absolute flex">
-            <div class="advisor-2">
-              <div class="o-frankvito">
-                <span class="logo-text"
-                  >FRANK<span class="o-bold">VITO</span></span
-                >
+          <div class="advisor-both absolute">
+            <div class="advisor-container justify-content-between d-flex">
+              <div class="advisor">
+                <div class="advisor-2">
+                  <div class="o-frankvito">
+                    <span class="logo-text"
+                      >FRANK<span class="o-bold">VITO</span></span
+                    >
+                  </div>
+                  <div class="o-content">
+                    <p class="o-uhnwi">UHNWI</p>
+                    <p class="o-investment-advisor">
+                      INVESTMENT <br /><span>ADVISOR</span>
+                    </p>
+                    <p class="o-descript">
+                      Providing Tailored Solution for Every Client, All
+                      <br />Under One Roof.
+                    </p>
+                  </div>
+                  <button class="o-contact-us">CONTACT US</button>
+                </div>
               </div>
-              <div class="o-content">
-                <p class="o-uhnwi">UHNWI</p>
-                <p class="o-investment-advisor">
-                  INVESTMENT <br /><span>ADVIDOR</span>
-                </p>
-                <p class="o-descript">
-                  Providing Tailored Solution for Every Client, All <br />Under
-                  One Roof.
-                </p>
+              <div class="advisor-logo">
+                <img src="../Frank-image/Logo.png" alt="" />
               </div>
-              <button>CONTACT US</button>
             </div>
-            <div class="advisor-logo">
-              <img src="../Frank-image/Logo.png" alt="" />
+            <div
+              class="award-winning d-flex justify-content-center align-items-center"
+            >
+              <div class="award d-flex align-items-center">
+                <span class="award-text">Award-Winning Strategies</span>
+                <img class="Ostar px-10" src="../Frank-image/Star.png" alt="" />
+                <span class="award-text"
+                  >1,000+ Successful Campaigns Delivered</span
+                >
+                <img class="Ostar px-10" src="../Frank-image/Star.png" alt="" />
+                <span class="award-text">98% Client Satisfaction Rate</span>
+              </div>
             </div>
           </div>
+
+          <div></div>
         </div>
       </div>
     </section>
-
     <!-- * 2nd Section "Exclusive Investment Opportunities"-->
     <div class="SecondSection">
       <!--! Subtitle -->
@@ -554,6 +607,9 @@
   <!-- * Bootstrap Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- * Js File-->
   <script src="Script.js"></script>
 </html>

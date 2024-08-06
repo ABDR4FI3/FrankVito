@@ -7,7 +7,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center; /* Ensures items are vertically centered */
   line-height: 65px;
 }
 
@@ -23,10 +23,10 @@
 
 .nav .nav-links {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row; /* Ensures the links are in a row */
   list-style: none;
-  padding-left: 0; 
-  margin: 0; 
+  padding-left: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
 }
 
 .nav .nav-links .nav-item {
@@ -42,8 +42,8 @@
   text-align: center;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  display: flex; 
-  align-items: center; 
+  display: flex; /* Flexbox for vertical centering */
+  align-items: center; /* Ensures text is vertically centered */
 }
 
 .o-frank-one .o-first-frank img{
@@ -177,7 +177,10 @@
   height: 92px;
   position: relative;
   border-radius: 10px;
+  /* padding-top: 99px; */
   margin-top: 55px;
+  background: #FFFFFF0F;
+
 }
 
 .award-text {
