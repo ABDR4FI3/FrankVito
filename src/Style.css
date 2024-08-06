@@ -905,7 +905,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border: 1px solid gray;
+  border: 1px solid rgba(255, 255, 255, 0.205);
   border-radius: 6%;
 }
 .TestimonialHeader {
@@ -1122,4 +1122,21 @@ body {
 }
 .TenthSectionInputContainer {
   display: flex;
+}
+.playButton{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background-color: #dec187;
+  color: white; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 60px;
 }
