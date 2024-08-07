@@ -59,9 +59,19 @@
   margin-top: 25px;
 }
 
+.o-frank-one .advisor-both{
+  position: absolute;
+  animation: fadeIn 3s ease-in-out;
+} 
+
+.advisor:hover,
+.advisor-logo:hover {
+  animation: moveUp 0.3s forwards; /* Adjust the duration as needed */
+}
+
 .advisor-container {
   width: auto;
-  padding: 20px;
+  padding: 20px;  
 }
 
 .advisor .o-frankvito {
@@ -327,4 +337,40 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: add a slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px); /* Move up by 10px */
+  }
+}
+
+@keyframes switchPlaces {
+  0%, 100% {
+    order: 1;
+  }
+  50% {
+    order: 2;
+  }
+}
+
+@keyframes switchPlacesReverse {
+  0%, 100% {
+    order: 2;
+  }
+  50% {
+    order: 1;
+  }
+}
